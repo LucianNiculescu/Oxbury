@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Entities;
+namespace App\Entities;
 
 class Position
 {

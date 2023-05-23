@@ -3,8 +3,8 @@
 require_once 'Entities/GameMap.php';
 require_once 'Entities/Position.php';
 
-use Entities\GameMap;
-use Entities\Position;
+use App\Entities\GameMap;
+use App\Entities\Position;
 
 
 $map = [

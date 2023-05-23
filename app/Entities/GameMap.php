@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Entities;
+namespace App\Entities;
 
 class GameMap
 {
@@ -13,6 +13,8 @@ class GameMap
     }
 
     /**
+     * Finding the shortest distance using the Breadth-First Search (BFS) algorithm that is checking the available position of neighbours
+     *
      * @param Position $start
      * @param Position $end
      * @return int
@@ -45,6 +47,8 @@ class GameMap
     }
 
     /**
+     * Checking what positions are available next (up, down, left, right) to the given Position
+     *
      * @param Position $position
      * @return array
      */
@@ -71,6 +75,8 @@ class GameMap
     }
 
     /**
+     * Checking if the position is valid based on the Horizontal and Vertical Position
+     *
      * @param int $horizontal
      * @param int $vertical
      * @return bool
