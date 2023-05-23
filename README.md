@@ -40,7 +40,8 @@ By using BFS, the solution guarantees finding the shortest path while respecting
 2. Simple solution using PhP OOP and SOLID Principles;
 
 ### What I Would Have Done With More Time
-1. Would implement different types of algorithms and check the performance between them. I was reading about different types like Dijkstra shortest path algorithm, the Yen’s algorithm or The All Pairs Shortest Path. These can all be implemented as individual Classes that implement an Interface that has the `pathfind()` as common method between them (also required)
-2. Would add the MySQL ( or any type of DB connection ) to store information like the performance of the code
-3. Would add traits or Abstract Classes for a more complex solution ( didn't see the need of it for the moment )
-4. For the sake of this exercise, I kept the naming of `pathfind()` as a requirement but I would've name this `getClosestPath()`
+1. Would implement different types of algorithms and check the performance between them. I was reading about different types like Dijkstra shortest path algorithm, the Yen’s algorithm or The All Pairs Shortest Path. These can all be implemented as individual Classes that implement an Interface that has the `pathfind()` as common method between them (also required);
+2. Would add the MySQL ( or any type of DB connection ) to store information like the performance of the code;
+3. Would add traits or Abstract Classes for a more complex solution ( didn't see the need of it for the moment );
+4. For the sake of this exercise, I kept the naming of `pathfind()` as a requirement but I would've name this `getClosestPath()`;
+5. Add a `develop` branch to reflect the development environment
