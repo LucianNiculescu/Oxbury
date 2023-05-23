@@ -3,12 +3,13 @@ declare(strict_types=1);
 namespace Entities;
 
 use App\Entities\GameMap;
+use App\Entities\Position;
 use Generator;
 use PHPUnit\Framework\TestCase;
 
 class GameMapTest extends TestCase
 {
-    public function pathfindDataProvider(): Generator
+    public static function pathfindDataProvider(): Generator
     {
         // The desired solution
         yield [
@@ -55,7 +56,7 @@ class GameMapTest extends TestCase
             ],
             new Position(0, 0),
             new Position(0, 0),
-            -1
+            0
         ];
     }
 
@@ -65,9 +66,6 @@ class GameMapTest extends TestCase
     public function testShortestPathFromMapWithPositions($map, $startPosition, $endPosition, $expectedOutcome): void
     {
         $gameMap = new GameMap($map);
-        $startPosition = new Position(0, 1); // P position
-        $endPosition = new Position(3, 2); // Q position
-
         $distance = $gameMap->pathfind($startPosition, $endPosition);
 
         self::assertSame($expectedOutcome, $distance);
